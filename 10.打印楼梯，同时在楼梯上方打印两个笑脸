@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(void)
+{
+	    int i,j;
+		char c = 219;
+		printf("\1\1"); /*输出两个笑脸    参考ASCII码表*/
+		for(i = 1;i<10;i++){
+			for(j = 1;j<i;j++){    //j<i   这样就能显示出那种楼梯的斜
+				printf("%c",c);
+			}
+			printf("\n");
+		}
+}
