@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(void){
+	int a,i,j,k; //a是数字，i,j,k，分别对应百十个位的数字
+	for(a = 100;a <= 999;a++){
+		i = a/100;
+	j = a%100/10;
+	k = a%10;
+		if(a == i*i*i + j*j*j + k*k*k){
+			printf("%5d",a);
+			printf("\n");
+		}
+	}
+}
+
