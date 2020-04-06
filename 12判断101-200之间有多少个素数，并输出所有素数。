@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(void)
+{
+	int i ,j;
+	for( i = 101;i   < 201;i++){
+		for(j = 2;j<i;j++){             
+			if(i%j!=0){                           // 素数的因数只有他本身和一
+			}
+		}
+			printf("%d",i);  //  这个打印的位置是在内循环结束之后大循坏开始前
+		printf("\n");
+	}                        
+}                  
+ 
