@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main(void){
+	int grade;
+	printf("please input the grade");
+	scanf("%d",&grade);
+	(grade>=90)?(printf("A")):(grade <=60?(printf("C")):(printf("B")));
+}
