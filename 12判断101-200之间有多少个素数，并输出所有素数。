@@ -1,14 +1,17 @@
-#include<stdio.h>
-int main(void)
+#include <stdio.h>
+void main()
 {
-	int i ,j;
-	for( i = 101;i   < 201;i++){
-		for(j = 2;j<i;j++){             
-			if(i%j!=0){                           // 素数的因数只有他本身和一
-			}
-		}
-			printf("%d",i);  //  这个打印的位置是在内循环结束之后大循坏开始前
-		printf("\n");
-	}                        
-}                  
- 
+    int i,j;
+    for(i = 101 ; i <= 200 ; i++ )
+    {
+        for(j = 2 ; j < i ; j++){
+            if(i % j == 0)  {        //只要除到一个数让 i 能被整除就跳出该循环。
+                break;
+			 }
+            else{ if(j == i - 1)   //除完最后一个数后还不跳出循环，就可以判断该数为素数。
+                    printf("%d ",i);
+						 
+				}
+          }
+    }
+}
